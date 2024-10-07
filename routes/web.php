@@ -17,9 +17,9 @@ use App\Http\Livewire\Files\ShowFile;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 Route::get('/login', Login::class)->name('login');
 

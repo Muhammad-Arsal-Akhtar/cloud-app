@@ -35,7 +35,7 @@
         <x-commons.toast />
         {{ $slot }}
 
-
+        <x-commons.footer />
 
         {{-- Livewire Scripts --}}
         @livewireScripts

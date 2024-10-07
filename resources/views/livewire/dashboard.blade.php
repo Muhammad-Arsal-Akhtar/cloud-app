@@ -1,5 +1,5 @@
 <div>
-  <div>
+  <div class="mb-5">
     <div class="flex flex-col justify-center item-center">
 
         <input type="text" placeholder="Type here" class="mx-auto mb-6 w-96 input input-bordered rounded-xl" wire:model.debounce.900ms="search" />
@@ -9,12 +9,12 @@
             
             @if (count($files) > 0)
                 @foreach ($files as $file)
-                    <div class="mb-16 shadow-xl w-72 card card-compact bg-base-100">
+                    <div class="mb-16 shadow-xl w-72 card card-compact bg-base-100 rounded-xl">
                         
                         <a href="{{ route('show.file', ['fileid' => $file->id]) }}">
-                            <figure> <img
+                            <figure class="overflow-hidden"> <img
                             src="{{asset('storage/'.$file->image)}}"
-                            alt="Shoes" class="object-contain w-full h-52" />
+                            alt="Shoes" class="object-contain w-full h-52 rounded-t-xl" />
                             </figure>
                         </a>
                         
@@ -23,7 +23,7 @@
                         <p>{{ $file->created_at }}</p>
                         <div class="justify-end card-actions">
                             
-                                <button class="btn btn-error" @click="$dispatch('open-modal', {{ $file->id }})">Delete it
+                                <button class="text-white btn btn-error" @click="$dispatch('open-modal', {{ $file->id }})">Delete it
                                 </button>
 
                         </div>

@@ -1,5 +1,5 @@
 <div>
-    <div class="px-10 lg:px-32">
+    <div class="px-10 mb-10 lg:px-32">
         <p class="text-2xl font-bold">{{ ucfirst($file->title) }}</p>
         <p class="text-sm">{{ $file->created_at }}</p>
         
