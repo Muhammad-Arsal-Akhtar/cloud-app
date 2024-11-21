@@ -8,6 +8,8 @@ After cloning the project into your directory, follow the given commands for the
 ### Prerequisites
 - PHP ^7.4.33
 - Composer
+- Laravel 8
+- Livewire 2
 - Node.js & npm
 
 
@@ -35,6 +37,9 @@ cp .env.example .env
 
 # Generate an application key:
 php artisan key:generate
+
+
+# Create database MySQl named cloud_app:
 
 
 # Run migrations:
